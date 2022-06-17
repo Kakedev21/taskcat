@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+nav {
+  background-color: #d7bcd8;
+  padding: 1% 2%;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .logo span {
+  color: #a42dd6;
+}
+
+nav .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-container .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-container .nav-links ul li {
+  margin: 0 10px;
+  background-color: #c796c4;
+  padding: 5px 17px;
+  border-radius: 7px;
+}
+
+nav .nav-container .nav-links ul li p {
+  font-weight: 600;
+  color: #fff;
+}
+
+nav .nav-container .nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav-container .nav-links .btn-logout {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main-container .main-header {
+  text-align: center;
+  margin-top: 180px;
+  letter-spacing: 6px;
+}
+
+main .main-container .main-header h1 {
+  color: #bf7dd0;
+}
+
+main .main-container .main-text {
+  text-align: center;
+  color: #6b6a6b;
+  line-height: 33px;
+  margin: 15px 0 25px 0;
+}
+
+main .logoImg {
+  width: 85px;
+  margin-bottom: 40px;
+}
+
+main .btn {
+  border: 2px solid #c796c4;
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .btn:hover {
+  background-color: #a42dd6;
+  color: #f2f2f2;
+}
+
+.register {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register .register-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.register .register-container h3 {
+  color: #bf7dd0;
+}
+
+.register .register-container .form-item {
+  margin: 15px 20px;
+  border-radius: 5px;
+}
+
+.register .register-container .form-item input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #a42dd6;
+  outline: none;
+  width: 200px;
+}
+
+.register .register-container .btn-reg {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background: transparent;
+  color: #a42dd6;
+  margin-bottom: 10px;
+}
+
+.dashBoard {
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+.dashBoard .d-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashBoard .d-container form {
+  margin-top: 70px;
+}
+
+.dashBoard .d-container form .d-name {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #c796c4;
+}
+
+.dashBoard .d-container form .dform-group {
+  background-color: #fff;
+  width: 350px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dashBoard .d-container form .dform-group .d-btn {
+  padding: 5px;
+  background-color: #c796c4;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 13px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dashBoard .d-container form .dform-group input {
+  width: 230px;
+  border: none;
+  outline: none;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.Spinner {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-form {
+  padding: 2% 15%;
+}
+
+.todo-form h1 {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.todo-form .todoContainer {
+  height: 100vh;
+}
+
+.todo-form .todoContainer .todolist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo-form .todocard {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 15px;
+  position: relative;
+}
+
+.todo-form .todocard .todoBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #d7bcd8;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.todo-form .todocard p {
+  margin: 20px 5px;
+}
+/*# sourceMappingURL=style.css.map */

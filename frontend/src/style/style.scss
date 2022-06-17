@@ -1,0 +1,267 @@
+//select all
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+//color palletes
+$lightViolet: #d7bcd8;
+$darkViolet: #c796c4;
+$violet: #a42dd6;
+
+//functions
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin heroPage {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+//navbar
+nav {
+  background-color: $lightViolet;
+  padding: 1% 2%;
+
+  .logo {
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    span {
+      color: $violet;
+    }
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-links {
+      ul {
+        display: flex;
+        list-style-type: none;
+        li {
+          margin: 0 10px;
+          background-color: $darkViolet;
+          padding: 5px 17px;
+          border-radius: 7px;
+
+          p {
+            font-weight: 600;
+            color: #fff;
+          }
+
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .btn-logout {
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//hero-cta
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .main-header {
+      text-align: center;
+      margin-top: 180px;
+      letter-spacing: 6px;
+
+      h1 {
+        color: #bf7dd0;
+      }
+    }
+    .main-text {
+      text-align: center;
+      color: #6b6a6b;
+      line-height: 33px;
+      margin: 15px 0 25px 0;
+    }
+  }
+  .logoImg {
+    width: 85px;
+    margin-bottom: 40px;
+  }
+  .btn {
+    border: 2px solid $darkViolet;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $violet;
+      color: #f2f2f2;
+    }
+  }
+}
+
+//register page
+.register {
+  @include heroPage();
+  @include flexCenter();
+
+  .register-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 13px;
+    text-align: center;
+
+    h3 {
+      color: #bf7dd0;
+    }
+
+    .form-item {
+      margin: 15px 20px;
+      border-radius: 5px;
+
+      input {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #a42dd6;
+        outline: none;
+        width: 200px;
+      }
+    }
+    .btn-reg {
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 1px solid #000;
+      background: transparent;
+      color: #a42dd6;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//user dashboard
+.dashBoard {
+  width: 100vw;
+  background-color: #f2f2f2;
+
+  .d-container {
+    @include flexCenter();
+
+    form {
+      margin-top: 70px;
+
+      .d-name {
+        text-align: center;
+        margin-bottom: 24px;
+        color: $darkViolet;
+      }
+
+      .dform-group {
+        background-color: #fff;
+        width: 350px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 10px;
+
+        .d-btn {
+          padding: 5px;
+          background-color: $darkViolet;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 13px;
+          border: none;
+          cursor: pointer;
+          flex: 1;
+        }
+
+        input {
+          width: 230px;
+          border: none;
+          outline: none;
+          flex: 2;
+        }
+      }
+    }
+  }
+}
+
+//spiner
+.Spinner {
+  @include heroPage();
+  @include flexCenter();
+}
+
+.todo-form {
+  padding: 2% 15%;
+
+  h1 {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .todoContainer {
+    height: 100vh;
+    .todolist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+  .todocard {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 15px;
+    position: relative;
+
+    .todoBtn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: $lightViolet;
+      border: none;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 20px 5px;
+    }
+  }
+}
