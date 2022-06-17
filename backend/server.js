@@ -20,7 +20,6 @@ app.use("/api/users", require("./routes/userRoute"));
 
 //serve static assets in production
 if (process.env.NODE_ENV === "production") {
-  //set static folder
   app.use(express.static(path.join(__dirname, "../frontend/build")));
 
   app.get("*", (req, res) =>
@@ -29,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
     )
   );
 } else {
-  app.get("/", (req, res) => res.send("please set to production"));
+  app.get("/", (req, res) => res.send("Please set to production"));
 }
 
 app.use(handleError);
